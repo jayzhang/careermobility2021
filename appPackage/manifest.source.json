@@ -39,7 +39,7 @@
         {
             "entityId": "index",
             "name": "Career Mobility",
-            "contentUrl": "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/Career-Mobility.aspx",
+            "contentUrl": "https://microsoftapc.sharepoint.com/_layouts/15/teamslogon.aspx?SPFX=true&dest=/teams/DevDivChina/SitePages/Career-Mobility.aspx",
             "websiteUrl": "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/Career-Mobility.aspx",
             "scopes": [
                 "personal","team"
@@ -48,7 +48,7 @@
         {
           "entityId": "jobs",
           "name": "Jobs",
-          "contentUrl": "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/We-are-hiring.aspx",
+          "contentUrl": "https://microsoftapc.sharepoint.com/_layouts/15/teamslogon.aspx?SPFX=true&dest=/teams/DevDivChina/SitePages/We-are-hiring.aspx",
           "websiteUrl": "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/We-are-hiring.aspx",
           "scopes": [
               "personal","team"
@@ -57,18 +57,41 @@
        {
          "entityId": "team-portfolios",
          "name": "Team Portfolios",
-         "contentUrl": "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/About-DevDiv-China.aspx",
+         "contentUrl": "https://microsoftapc.sharepoint.com/_layouts/15/teamslogon.aspx?SPFX=true&dest=/teams/DevDivChina/SitePages/About-DevDiv-China.aspx",
          "websiteUrl": "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/About-DevDiv-China.aspx",
          "scopes": [
              "personal","team"
          ]
-      }
+      },
+      {
+         "entityId": "faq",
+         "name": "FAQs",
+         "contentUrl": "https://microsoftapc.sharepoint.com/_layouts/15/teamslogon.aspx?SPFX=true&dest=/teams/DevDivChina/SitePages/DevDiv-China-Career-Mobility-2021--FAQs.aspx",
+         "websiteUrl": "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/DevDiv-China-Career-Mobility-2021--FAQs.aspx",
+         "scopes": [
+             "personal",
+             "team"
+         ]
+     },
+     {
+         "entityId": "v-team",
+         "name": "Contact Us",
+         "contentUrl": "https://microsoftapc.sharepoint.com/_layouts/15/teamslogon.aspx?SPFX=true&dest=/teams/DevDivChina/SitePages/DevDiv-China-2021-Career-Mobility-Team.aspx",
+         "websiteUrl": "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/DevDiv-China-2021-Career-Mobility-Team.aspx",
+         "scopes": [
+             "personal",
+             "team"
+         ]  
+     }
     ],
     "permissions": [
         "identity",
         "messageTeamMembers"
     ],
-    "validDomains": [],
+    "validDomains": [
+        "microsoftapc.sharepoint.com",
+        "*.login.microsoftonline.com"
+    ],
     "webApplicationInfo": {
         "id": "{appClientId}",
         "resource": "{webApplicationInfoResource}"
