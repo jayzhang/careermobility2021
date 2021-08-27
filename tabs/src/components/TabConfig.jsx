@@ -13,6 +13,13 @@ class TabConfig extends React.Component {
     // Initialize the Microsoft Teams SDK
     microsoftTeams.initialize();
 
+    const settings = {
+      suggestedDisplayName: "Career Mobility 2021",
+      entityId: "careermobilityddc",
+      contentUrl: "https://microsoftapc.sharepoint.com/_layouts/15/teamslogon.aspx?SPFX=true&dest=/teams/DevDivChina/SitePages/Career-Mobility.aspx",
+      websiteUrl: "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/Career-Mobility.aspx"
+    };
+
     /**
      * When the user clicks "Save", save the url for your configured tab.
      * This allows for the addition of query string parameters based on
@@ -20,12 +27,7 @@ class TabConfig extends React.Component {
      */
     microsoftTeams.settings.registerOnSaveHandler((saveEvent) => {
       // const baseUrl = `https://${window.location.hostname}:${window.location.port}`;
-      microsoftTeams.settings.setSettings({
-        suggestedDisplayName: "Career Mobility 2021",
-        entityId: "careermobilityddc",
-        contentUrl: "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/Career-Mobility.aspx",
-        websiteUrl: "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/Career-Mobility.aspx",
-      });
+      microsoftTeams.settings.setSettings(settings);
       saveEvent.notifySuccess();
     });
 
@@ -42,7 +44,7 @@ class TabConfig extends React.Component {
         <h1>Tab Configuration</h1>
         <div>
           This is where you will add your tab configuration options the user can choose when the tab
-          is added to your team/group chat.
+          is added to your team/group chat. Settings: {settings.contentUrl}
         </div>
       </div>
     );

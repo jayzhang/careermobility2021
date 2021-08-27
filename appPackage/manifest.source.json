@@ -27,7 +27,7 @@
     "composeExtensions": [],
     "configurableTabs": [
         {
-            "configurationUrl": "{baseUrl}/index.html#/config",
+            "configurationUrl": "{baseUrl}/index.html#/config?inTeamsSSO=true",
             "canUpdateConfiguration": true,
             "scopes": [
                 "team",
@@ -90,10 +90,16 @@
     ],
     "validDomains": [
         "microsoftapc.sharepoint.com",
-        "*.login.microsoftonline.com"
+        "*.login.microsoftonline.com",
+        "*.sharepoint.com",
+        "*.sharepoint-df.com",
+        "spoppe-a.akamaihd.ne",
+        "spoprod-a.akamaihd.net",
+        "resourceseng.blob.core.windows.net",
+        "msft.spoppe.com"
     ],
     "webApplicationInfo": {
-        "id": "{appClientId}",
-        "resource": "{webApplicationInfoResource}"
+        "id": "00000003-0000-0ff1-ce00-000000000000",
+        "resource": "https://microsoftapc.sharepoint.com"
     }
 }
