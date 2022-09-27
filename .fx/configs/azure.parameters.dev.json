@@ -1,0 +1,14 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "provisionParameters": {
+            "value": {
+                "resourceBaseName": "careermobideve35451",
+                "frontendHostingStorageName": "careermobility20fe6fb2be",
+                "simpleAuthServerFarmsName": "careermobility2021sa6fb2be",
+                "simpleAuthWebAppName": "careermobility2021sa6fb2be"
+            }
+        }
+    }
+}

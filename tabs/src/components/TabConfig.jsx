@@ -14,7 +14,7 @@ class TabConfig extends React.Component {
     microsoftTeams.initialize();
 
     const settings = {
-      suggestedDisplayName: "Career Mobility 2021",
+      suggestedDisplayName: "Career Mobility 2022",
       entityId: "careermobilityddc",
       contentUrl: "https://microsoftapc.sharepoint.com/_layouts/15/teamslogon.aspx?SPFX=true&dest=/teams/DevDivChina/SitePages/Career-Mobility.aspx",
       websiteUrl: "https://microsoftapc.sharepoint.com/teams/DevDivChina/SitePages/Career-Mobility.aspx"
